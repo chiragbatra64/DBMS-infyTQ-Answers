@@ -1,0 +1,15 @@
+Department Table:  Primary Key:- DeptId
+                   Candidate Key:- DName
+                   Foreign Key:- HODId(InstrId  From Instructor Table)
+
+Instructor Table:   Primary Key:- InstrId
+                    Candidate Key:- Name, Email
+                    Foreign Key:- DeptId
+
+Course table:   Primary Key:- CId
+                Candidate Key:- CName
+                Foreign Key:- Null
+
+Allocation:   Primary Key:-CId+InstrId(Composite)
+              Candidate Key:- Null
+              Foreign Key:-Cid, InstrId
