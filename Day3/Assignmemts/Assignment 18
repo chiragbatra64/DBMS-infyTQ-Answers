@@ -1,0 +1,1 @@
+INSERT INTO Bill VALUES(1001, 'Loyal World', 101, 'A1001', 1000, '20-OCT-15', 2);
