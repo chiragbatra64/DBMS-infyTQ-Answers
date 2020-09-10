@@ -1,0 +1,25 @@
+Customer Table:   Primary Key:-CustId
+                  Candidate Key:-EmailId, ContactNo
+                  Foreign Key:-Null
+
+RetailOutlet Table:   Primary Key:-ROId
+                      Candidate Key:-Null
+                      Foreign Key:-ManagerId
+
+Item Table:   Primary Key:-ItemCode
+              Candidate Key:-Category
+              Foreign Key:-Null
+
+Employee Table:   Primary Key:-EmpId
+                  Candidate Key:-EmailId, ContactNo
+                  Foreign Key:-Works In(ROId from RetailOutlet Table)
+
+PurchaseBill Table:   Primary Key:-BillId
+                      Candidate Key:-Null
+                      Foreign Key:-RetailOutlet, Item, Customer
+
+
+
+To identify Customer’s Spouse
+We can use Joins
+SELECT C1.CUSTID, C1.CUSTNAME, C2.CUSTID, C2.CUSTNAME FROM CUSTOMER C1 INNER JOIN CUSTOMER C2 ON C1.ADDRESS=C2.ADDRESS AND C1.CUSTID!=C2.CUSTID;
