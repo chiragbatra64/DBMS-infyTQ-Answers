@@ -1,0 +1,2 @@
+  
+ALTER TABLE Player RENAME COLUMN PId TO PlayerId;
