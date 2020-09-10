@@ -1,0 +1,1 @@
+SELECT Descr, Price FROM Item WHERE Category='Hard disk';
