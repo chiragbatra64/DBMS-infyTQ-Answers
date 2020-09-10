@@ -1,0 +1,11 @@
+Customer Table:  Primary Key:- CustId
+                 Candidate Key:- Email
+                 Foreign Key:- AcctType
+
+AccountType Table:  Primary Key:- AcctType, MinBalance(Composite)
+                    Candidate Key:- Null
+                    Foreign Key:- Null
+
+Transaction Table:   Primary Key:- TId
+                     Candidate Key:- ChequeNum
+                     Foreign Key:- AccNum, CustId
