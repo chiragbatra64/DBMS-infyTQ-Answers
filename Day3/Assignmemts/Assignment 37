@@ -1,0 +1,2 @@
+  
+SELECT quotationid, qdate, quotedprice FROM Quotation WHERE quotedprice>1400 AND quotedprice<2150;
