@@ -1,0 +1,2 @@
+
+ALTER TABLE Supplier ADD City CHAR(10);
